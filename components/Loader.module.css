@@ -1,0 +1,56 @@
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 8000;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(4rem, 10vw, 8rem);
+  font-weight: 900;
+  letter-spacing: -.02em;
+  color: var(--w);
+  opacity: 0;
+}
+
+.logo em {
+  color: var(--r);
+  font-style: normal;
+}
+
+.trackWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.track {
+  width: 180px;
+  height: 1px;
+  background: rgba(255,255,255,.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.fill {
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%;
+  background: var(--r);
+  transition: width 0.05s linear;
+}
+
+.num {
+  font-family: 'Syne', sans-serif;
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .3em;
+  color: var(--wm);
+}

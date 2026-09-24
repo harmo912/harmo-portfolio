@@ -1,0 +1,119 @@
+.stack {
+  min-height: 100vh;
+  background: var(--bg);
+  padding: 120px 52px;
+  position: relative;
+  overflow: hidden;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header { margin-bottom: 72px; }
+
+.label {
+  font-family: 'Syne', sans-serif;
+  font-size: .62rem;
+  font-weight: 700;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  color: var(--r);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.label::before {
+  content: '';
+  width: 18px;
+  height: 1px;
+  background: var(--r);
+}
+
+.title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(3rem, 5vw, 5.5rem);
+  font-weight: 900;
+  line-height: .92;
+  letter-spacing: .01em;
+}
+.t1 { display: block; color: var(--w); }
+.t2 {
+  display: block;
+  background: linear-gradient(90deg, var(--r) 0%, #fff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Categories */
+.categoriesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px 80px;
+}
+
+.category {}
+
+.catName {
+  font-family: 'Syne', sans-serif;
+  font-size: .65rem;
+  font-weight: 700;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--r);
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--gb);
+}
+
+/* Skill bar */
+.skills { display: flex; flex-direction: column; gap: 18px; }
+
+.skillRow {}
+
+.skillHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.skillName {
+  font-size: .82rem;
+  font-weight: 400;
+  color: var(--w);
+  letter-spacing: .04em;
+}
+
+.skillPct {
+  font-family: 'Syne', sans-serif;
+  font-size: .65rem;
+  font-weight: 700;
+  color: var(--r);
+  letter-spacing: .08em;
+}
+
+.skillTrack {
+  height: 2px;
+  background: rgba(255,255,255,.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.skillFill {
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%;
+  background: linear-gradient(90deg, var(--r3), var(--r), var(--r2));
+  border-radius: 2px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .stack { padding: 80px 24px; }
+  .categoriesGrid { grid-template-columns: 1fr; gap: 40px; }
+}

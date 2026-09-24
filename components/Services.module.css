@@ -1,0 +1,130 @@
+.services {
+  min-height: 100vh;
+  background: var(--bg);
+  padding: 120px 52px;
+  position: relative;
+  overflow: hidden;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header { margin-bottom: 72px; }
+
+.label {
+  font-family: 'Syne', sans-serif;
+  font-size: .62rem;
+  font-weight: 700;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  color: var(--r);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.label::before {
+  content: '';
+  width: 18px;
+  height: 1px;
+  background: var(--r);
+}
+
+.title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(3rem, 5vw, 5.5rem);
+  font-weight: 900;
+  line-height: .92;
+  letter-spacing: .01em;
+}
+.t1 { display: block; color: var(--w); }
+.t2 {
+  display: block;
+  background: linear-gradient(90deg, var(--r) 0%, #fff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+}
+
+.card {
+  background: rgba(255,255,255,.03);
+  border: 1px solid var(--gb);
+  padding: 40px 36px;
+  transition: border-color .3s, background .3s;
+  height: 100%;
+}
+.card:hover {
+  border-color: var(--r);
+  background: rgba(220,38,38,.04);
+}
+
+.cardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: rgba(220,38,38,.25);
+  line-height: 1;
+}
+
+.arrow {
+  font-size: 1.4rem;
+  color: var(--r);
+}
+
+.cardTitle {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--w);
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.cardDesc {
+  font-size: .85rem;
+  line-height: 1.8;
+  color: var(--wm);
+  margin-bottom: 24px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  font-size: .62rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border: 1px solid rgba(220,38,38,.25);
+  color: var(--wm);
+  border-radius: 50px;
+  transition: all .25s;
+}
+.tag:hover {
+  border-color: var(--r);
+  color: var(--r);
+}
+
+@media (max-width: 900px) {
+  .services { padding: 80px 24px; }
+  .grid { grid-template-columns: 1fr; }
+}
