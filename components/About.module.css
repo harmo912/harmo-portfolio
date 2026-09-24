@@ -174,6 +174,7 @@
 /* Responsive */
 @media (max-width: 900px) {
   .about { padding: 80px 24px; }
-  .grid  { grid-template-columns: 1fr; gap: 48px; }
+  .grid { grid-template-columns: 1fr; gap: 48px; }
   .statsRow { grid-template-columns: repeat(3, 1fr); }
+  .accentLine { display: none; }
 }

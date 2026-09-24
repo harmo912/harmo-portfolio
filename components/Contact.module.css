@@ -240,4 +240,5 @@
   .contact { padding: 80px 24px; }
   .grid { grid-template-columns: 1fr; gap: 48px; }
   .row { grid-template-columns: 1fr; }
+  .btn { width: 100%; justify-content: center; }
 }

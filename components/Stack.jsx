@@ -127,31 +127,34 @@ function SkillBar({ name, level, index }) {
 export default function Stack({ lang }) {
   const t = content[lang]
   const ref = useRef(null)
-  const inView = useInView(ref, { once: true, margin: '-100px' })
-
   return (
-    <section id="stack" className={styles.stack} ref={ref}>
+    <section id="stack" className={styles.stack} >
       <div className={styles.inner}>
-        {/* Header */}
-        <div className={styles.header}>
-          <motion.div
-            className={styles.label}
-            variants={fadeUp} initial="hidden"
-            animate={inView ? 'visible' : 'hidden'}
-            custom={0}
-          >
-            {t.label}
-          </motion.div>
-          <motion.h2
-            className={styles.title}
-            variants={fadeUp} initial="hidden"
-            animate={inView ? 'visible' : 'hidden'}
-            custom={1}
-          >
-            <span className={styles.t1}>{t.title1}</span>
-            <span className={styles.t2}>{t.title2}</span>
-          </motion.h2>
-        </div>
+{/* Header */}
+<div className={styles.header}>
+<motion.div
+  className={styles.label}
+  initial={{ opacity: 0, y: 40, scale: 0.92 }}
+  whileInView={{ opacity: 1, y: 0, scale: 1 }}
+  viewport={{ once: true, margin: '-50px' }}
+  transition={{ type: 'spring', stiffness: 160, damping: 13 }}
+  whileHover={{ scale: 1.03, transition: { type: 'spring', stiffness: 400, damping: 12 } }}
+>
+  {t.label}
+</motion.div>
+
+<motion.h2
+  className={styles.title}
+  initial={{ opacity: 0, y: 40, scale: 0.92 }}
+  whileInView={{ opacity: 1, y: 0, scale: 1 }}
+  viewport={{ once: true, margin: '-50px' }}
+  transition={{ type: 'spring', stiffness: 160, damping: 13, delay: 0.1 }}
+  whileHover={{ scale: 1.03, transition: { type: 'spring', stiffness: 400, damping: 12 } }}
+>
+  <span className={styles.t1}>{t.title1}</span>
+  <span className={styles.t2}>{t.title2}</span>
+</motion.h2>
+</div>
 
         {/* Categories grid */}
         <div className={styles.categoriesGrid}>
