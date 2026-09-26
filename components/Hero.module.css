@@ -245,16 +245,16 @@
     padding-bottom: 40px;
   }
 
-  .photo {
-    width: 100%;
-    height: 75%;
-    top: 0;
-    right: 0;
-    object-position: center top;
-    -webkit-mask-image: linear-gradient(to bottom, black 30%, transparent 100%);
-    mask-image: linear-gradient(to bottom, black 30%, transparent 100%);
-    opacity: 0.35;
-  }
+.photo {
+  width: 100%;
+  height: 65%;
+  top: 0;
+  right: 0;.bottom
+  object-position: center top;
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  opacity: 0.65;
+}
 
   .content {
     padding: 0 24px 24px;
@@ -266,11 +266,13 @@
     font-size: clamp(3.5rem, 16vw, 6rem);
   }
 
-  .bottom {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-  }
+.bottom {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
 
   .desc {
     font-size: .88rem;
@@ -278,10 +280,10 @@
   }
 
   .btns {
-    flex-direction: column;
-    width: 100%;
-    gap: 10px;
-  }
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
 
   .btnPrimary,
   .btnSecondary,

@@ -160,15 +160,16 @@ export default function Hero({ lang, loaderDone }) {
     {t.cta2}
   </motion.a>
 
-  <motion.a
-    href="/cv.pdf"
-    download="CV_Harmonic_Hounleba.pdf"
-    className={styles.btnCV}
-    whileHover={{ scale: 1.06, transition: { type: 'spring', stiffness: 400, damping: 15 } }}
-    whileTap={{ scale: 0.96 }}
-  >
-    <i className="bi bi-download" /> CV
-  </motion.a>
+<motion.a
+  href="/cv.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className={styles.btnCV}
+  whileHover={{ scale: 1.06, transition: { type: 'spring', stiffness: 400, damping: 15 } }}
+  whileTap={{ scale: 0.96 }}
+>
+  <i className="bi bi-download" /> CV
+</motion.a>
 </div>
         </div>
       </div>

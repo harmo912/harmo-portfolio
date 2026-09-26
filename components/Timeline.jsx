@@ -12,31 +12,31 @@ const content = {
     title2: 'histoire.',
     items: [
       {
-        year: '2022',
+        year: '2024',
         title: 'ENEAM — Réseaux informatiques',
         desc: "Intégration à l'École Nationale d'Économie Appliquée et de Management, filière réseaux et systèmes informatiques.",
         tag: 'Formation'
       },
       {
-        year: '2023',
+        year: '2025',
         title: 'Fondateur — QYNEX',
         desc: "Création de QYNEX, plateforme e-commerce pensée pour le marché béninois avec paiements intégrés.",
         tag: 'Entrepreneuriat'
       },
       {
-        year: '2024',
+        year: '2026',
         title: 'Certification D-CLIC OIF',
         desc: "Certification en développement mobile obtenue via le programme D-CLIC de l'Organisation Internationale de la Francophonie.",
         tag: 'Certification'
       },
       {
-        year: '2025',
+        year: '2026',
         title: 'Stage — DRWINTECH',
         desc: "Développement de StageLink, une plateforme de gestion de stages en Laravel et Next.js.",
         tag: 'Expérience'
       },
       {
-        year: '2025',
+        year: '2026',
         title: 'Freelance — Concepteur.bj',
         desc: "Missions freelance en développement web, mobile et audit de sécurité sur la plateforme Concepteur.bj.",
         tag: 'Freelance'
@@ -49,31 +49,31 @@ const content = {
     title2: 'story.',
     items: [
       {
-        year: '2022',
+        year: '2024',
         title: 'ENEAM — Computer Networks',
         desc: "Joined the École Nationale d'Économie Appliquée et de Management, computer networks and systems track.",
         tag: 'Education'
       },
       {
-        year: '2023',
+        year: '2025',
         title: 'Founder — QYNEX',
         desc: "Created QYNEX, an e-commerce platform designed for the Beninese market with integrated payments.",
         tag: 'Entrepreneurship'
       },
       {
-        year: '2024',
+        year: '2026',
         title: 'D-CLIC OIF Certification',
         desc: "Mobile development certification obtained through the D-CLIC program of the Organisation Internationale de la Francophonie.",
         tag: 'Certification'
       },
       {
-        year: '2025',
+        year: '2026',
         title: 'Internship — DRWINTECH',
         desc: "Developed StageLink, an internship management platform built with Laravel and Next.js.",
         tag: 'Experience'
       },
       {
-        year: '2025',
+        year: '2026',
         title: 'Freelance — Concepteur.bj',
         desc: "Freelance missions in web development, mobile and security audits on the Concepteur.bj platform.",
         tag: 'Freelance'
