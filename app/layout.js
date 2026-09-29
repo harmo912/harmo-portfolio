@@ -1,4 +1,3 @@
-import type { ReactNode } from 'react'
 import './globals.css'
 
 export const metadata = {
@@ -6,11 +5,7 @@ export const metadata = {
   description: 'Full-Stack Developer - Entrepreneur - Web Pentester',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: ReactNode
-}) {
+export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       <head>
