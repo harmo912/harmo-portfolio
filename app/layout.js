@@ -63,3 +63,17 @@ export const metadata = {
     canonical: 'https://harmonic-hounleba-portfolio.vercel.app',
   },
 }
+export default function RootLayout({ children }) {
+  return (
+    <html lang="fr">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+        />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
+      <body>{children}</body>
+    </html>
+  )
+}
