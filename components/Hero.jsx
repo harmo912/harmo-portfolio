@@ -168,7 +168,7 @@ export default function Hero({ lang, loaderDone }) {
   whileHover={{ scale: 1.06, transition: { type: 'spring', stiffness: 400, damping: 15 } }}
   whileTap={{ scale: 0.96 }}
 >
-  <i className="bi bi-download" /> CV
+  <i className="bi bi-file-person" /> CV
 </motion.a>
 </div>
         </div>
